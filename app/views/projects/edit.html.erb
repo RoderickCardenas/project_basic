@@ -1,0 +1,7 @@
+<h1>Edit Project</h1>
+<%= render 'form', project: @project %>
+
+<br>
+<%= button_to "View Project", project_path(@project), method: :get %>
+<br>
+<%= button_to "Back", projects_path, method: :get %>

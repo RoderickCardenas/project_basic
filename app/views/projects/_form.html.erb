@@ -1,0 +1,16 @@
+<%= form_for @project do |f| %>
+<div>
+    <%= f.label :"project:" %>
+    <%= f.text_field :name %>
+    <br>
+    <br>
+    <%= f.label :"description:" %>
+    <%= f.text_field :description %>
+</div>
+<br>
+
+<%# <%= f.collection_select :class_id, Class.all, :id, :class_name %>
+
+    <%= f.submit %>
+  
+<% end %>
